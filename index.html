@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embed Page</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        position: relative; 
+    }
+    #blackSquare {
+        position: absolute;
+        top: 10px; 
+        left: 10px; 
+        width: 82px;
+        height: 82px;
+        background-color: black;
+        z-index: 9999; 
+    }
+    #embeddedFrame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<div id="blackSquare"></div>
+<iframe id="embeddedFrame" src="https://rexmc.pl/HBO/embed.html"></iframe>
+<script>
+    var pageTitle = "Nazwa Strony"; 
+
+    
+    console.log("Nazwa strony: " + pageTitle);
+</script>
+</body>
+</html>
